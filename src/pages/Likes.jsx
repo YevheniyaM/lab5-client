@@ -12,7 +12,7 @@ const Likes = () => {
       try {
         const token = localStorage.getItem("token"); // Отримуємо токен авторизації
         const response = await fetch(
-          `${BASE_URL}/http://localhost:3000/publications/liked`,
+          `${BASE_URL}/publications/liked`,
           {
             method: "GET",
             headers: {
@@ -40,7 +40,7 @@ const Likes = () => {
   if (loading)
     return (
       <div className="text-4xl sm:text-5xl lg:text-6xl font-jomhuria mt-10 text-center w-full py-20 bg-black/50">
-        <p>Loading...</p>;
+        <p>Loading...</p>
       </div>
     );
   if (error) return <p>{error}</p>;

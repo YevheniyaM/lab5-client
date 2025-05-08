@@ -23,7 +23,7 @@ const Header = () => {
         <nav>
           <ul className="flex flex-wrap items-center gap-4 sm:gap-8 lg:gap-12 text-xl sm:text-2xl md:text-4xl">
             <li className="hover:text-[#b7c6d0] transition-colors duration-300 ease-in-out">
-              <Link href="/publications">Articles</Link>
+              <Link to="/publications">Articles</Link>
             </li>
             {user ? (
               <>
