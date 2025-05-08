@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Publication from "./../components/Publication.jsx";
+import BASE_URL from "../db/baseUrl";
 
 const Likes = () => {
   const [likedPublications, setLikedPublications] = useState([]);
@@ -11,7 +12,7 @@ const Likes = () => {
       try {
         const token = localStorage.getItem("token"); // Отримуємо токен авторизації
         const response = await fetch(
-          "http://localhost:3000/publications/liked",
+          `${BASE_URL}/http://localhost:3000/publications/liked`,
           {
             method: "GET",
             headers: {
