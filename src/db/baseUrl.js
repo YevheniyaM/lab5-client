@@ -1,2 +1,2 @@
-const BASE_URL = "https://my-travel-ao6f.onrender.com";
+const BASE_URL = "https://my-travel-e64v.onrender.com";
 export default BASE_URL;
